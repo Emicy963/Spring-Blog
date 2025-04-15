@@ -3,7 +3,7 @@ package com.cafu.blog.post.dto;
 import jakarta.validation.constraints.NotBlank;
 
 public class PostDTO {
-    
+
     @NotBlank(message = "Title is required!")
     private String title;
 
