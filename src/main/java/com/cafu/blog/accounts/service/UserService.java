@@ -1,7 +1,7 @@
-package com.cafu.blog.service;
+package com.cafu.blog.accounts.service;
 
-import com.cafu.blog.model.User;
-import com.cafu.blog.repository.UserRepository;
+import com.cafu.blog.accounts.model.User;
+import com.cafu.blog.accounts.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

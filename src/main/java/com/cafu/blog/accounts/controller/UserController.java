@@ -1,8 +1,8 @@
-package com.cafu.blog.controller;
+package com.cafu.blog.accounts.controller;
 
-import com.cafu.blog.dto.UserDTO;
-import com.cafu.blog.model.User;
-import com.cafu.blog.service.UserService;
+import com.cafu.blog.accounts.dto.UserDTO;
+import com.cafu.blog.accounts.model.User;
+import com.cafu.blog.accounts.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

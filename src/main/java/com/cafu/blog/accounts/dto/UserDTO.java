@@ -1,21 +1,21 @@
-package com.cafu.blog.model;
+package com.cafu.blog.accounts.dto;
 
-import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 
-@Entity
-@Table(name = "users")
-public class User {
+public class UserDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @NotBlank(message = "Name is required")
     private String name;
-    @Column(unique = true)
+
+    @NotBlank(message = "Email is required")
+    @Email(message = "Email is invalid")
     private String email;
+
+    @NotBlank(message = "Password is required")
     private String password;
 
-    public long getId(){return id;}
-    public void setId(long id){this.id=id;}
+    public record loginDTO(String email, String password){}
 
     public String getName(){return name;}
     public void setName(String name){this.name=name;}

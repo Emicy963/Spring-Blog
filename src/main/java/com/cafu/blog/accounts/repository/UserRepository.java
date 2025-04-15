@@ -1,6 +1,6 @@
-package com.cafu.blog.repository;
+package com.cafu.blog.accounts.repository;
 
-import com.cafu.blog.model.User;
+import com.cafu.blog.accounts.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
